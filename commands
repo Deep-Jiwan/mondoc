@@ -1,0 +1,6 @@
+docker network create -d macvlan --subnet=192.168.88.0/24 --gateway=192.168.88.1 -o parent=eth0 macvlan_net
+
+
+
+git init
+git remote add origin https://github.com/Deep-jiwan/mondoc.git

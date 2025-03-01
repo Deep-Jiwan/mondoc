@@ -1,0 +1,28 @@
+version: "3.8"
+
+networks:
+  macvlan_net:
+    driver: macvlan
+    driver_opts:
+      parent: eth0   # Change this to your actual network interface
+    ipam:
+      config:
+        - subnet: 192.168.88.0/24  # Change to match your network
+          gateway: 192.168.88.1    # Change to match your network gateway
+
+services:
+  mondoc:
+    image: mondoc:latest
+    container_name: my-mondoc
+    ports:
+      - "5001:5001"  # Explicitly binding, though it's ignored with host networking
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Docker socket for daemon access
+    restart: unless-stopped
+
+
+
+
+
+
+
