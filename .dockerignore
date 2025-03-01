@@ -6,3 +6,5 @@ dist
 .DS_Store
 .env
 commands
+README.md
+.gitignore
