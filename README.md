@@ -86,7 +86,7 @@ Further documentation and updates will be released in due time.
 - **Alerting & Notifications:** Configure customizable alerts and notifications to promptly inform users about critical container events.
 
 
-## Thank you for visitng and going through this documentation
+## Thank you for visiting and going through this documentation
 
 ![image](https://github.com/user-attachments/assets/8a77fc8f-880c-4b66-96b1-f8cba1f45db3)
 
