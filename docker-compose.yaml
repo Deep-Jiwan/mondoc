@@ -12,10 +12,10 @@ networks:
 
 services:
   mondoc:
-    image: mondoc:latest
+    image: ghcr.io/deep-jiwan/mondoc:latest
     container_name: my-mondoc
     ports:
-      - "5001:5001"  # Explicitly binding, though it's ignored with host networking
+      - "5001:5001"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock  # Docker socket for daemon access
     restart: unless-stopped
@@ -23,6 +23,6 @@ services:
 
 
 
-
+#ghcr.io/deep-jiwan/mondoc:latest
 
 
