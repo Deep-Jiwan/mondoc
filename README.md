@@ -47,7 +47,7 @@ I believe AI is a powerful tool for building applications like mondoc. As the pr
 - **Save Logins:** Stores your container login credentials securely.
 - **Proxy Connect:** Create a proxy to connect to your services effortlessly.
 
-- **Access Control** Though currently there is not login settings, this service can easily be put behind a cloudflare zero trust Access portal to provide that funcionality when accessing the app from a remote location.
+- **Access Control** Though currently there is no login component, this service can easily be put behind a cloudflare zero trust Access portal to provide that funcionality when accessing the app from a remote location.
 
 ---
 
