@@ -1,8 +1,8 @@
 docker network create -d macvlan --subnet=192.168.88.0/24 --gateway=192.168.88.1 -o parent=eth0 macvlan_net
 
-docker build -t mondoc .
+docker build -t ghcr.io/deep-jiwan/mondoc:arm .
 
-docker run -d --name my-mondoc --restart unless-stopped -p 5001:5001 -v /var/run/docker.sock:/var/run/docker.sock mondoc:test
+docker run -d --name my-mondoc --restart unless-stopped -p 5001:5001 -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/deep-jiwan/mondoc:latest
 
 
 
