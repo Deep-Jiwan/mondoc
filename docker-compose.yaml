@@ -1,28 +1,18 @@
 version: "3.8"
-
-networks:
-  macvlan_net:
-    driver: macvlan
-    driver_opts:
-      parent: eth0   # Change this to your actual network interface
-    ipam:
-      config:
-        - subnet: 192.168.88.0/24  # Change to match your network
-          gateway: 192.168.88.1    # Change to match your network gateway
-
 services:
   mondoc:
     image: ghcr.io/deep-jiwan/mondoc:latest
     container_name: my-mondoc
-    ports:
-      - "5001:5001"
+    network_mode: "host" 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock  # Docker socket for daemon access
     restart: unless-stopped
 
 
-
+# Host netork allows for network related features to be used. 
+# Currently only working with linux based docker deamon
 
 #ghcr.io/deep-jiwan/mondoc:latest
+#ghcr.io/deep-jiwan/mondoc:arm
 
 
