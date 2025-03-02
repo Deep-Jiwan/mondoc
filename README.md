@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/41b9a9cc-b7c8-42d0-8850-397a4442216b)# mondoc
+# mondoc
 
 A lightweight monitoring and tagging tool for Docker containers built with React and Node.js.
 
